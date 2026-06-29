@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SÉCTION 710 — Tienda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-xl">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <svg class="brand-star" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M18 2 L20.5 15.5 L34 18 L20.5 20.5 L18 34 L15.5 20.5 L2 18 L15.5 15.5 Z" fill="url(#starGrad)" />
+          <circle cx="18" cy="18" r="3" fill="white" opacity="0.6"/>
+          <defs>
+            <linearGradient id="starGrad" x1="2" y1="2" x2="34" y2="34">
+              <stop offset="0%" stop-color="#FFD3F0"/>
+              <stop offset="50%" stop-color="#F5C700"/>
+              <stop offset="100%" stop-color="#B7E7FC"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-name">SÉCTION <em>710</em></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-3 align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item">
+            <button class="btn btn-cart" id="cartBtn" title="Ver carrito">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              <span class="cart-badge" id="cartCount">0</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-glow glow-pink"></div>
+    <div class="hero-glow glow-blue"></div>
+    <div class="hero-glow glow-gold"></div>
+    <div class="container-xl text-center position-relative">
+      <p class="hero-eyebrow">Colección Exclusiva 2025</p>
+      <h1 class="hero-title">Tu estilo,<br/><em>sin límites.</em></h1>
+      <p class="hero-sub">Zapatillas, botas y accesorios diseñados para quienes se atreven.</p>
+      <a href="#catalogo" class="btn btn-hero">Explorar colección</a>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section class="catalog-section" id="catalogo">
+    <div class="container-xl">
+      <div class="section-label">— Catálogo</div>
+      <h2 class="section-title">Piezas de la temporada</h2>
+      <div class="row g-4 justify-content-center" id="productGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="nosotros">
+    <div class="container-xl">
+      <div class="about-inner">
+        <div class="about-star">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <path d="M40 4 L45 37.5 L78.5 40 L45 42.5 L40 76 L35 42.5 L1.5 40 L35 37.5 Z" fill="url(#aGrad)" opacity="0.9"/>
+            <path d="M40 20 L42.5 37 L59 40 L42.5 43 L40 60 L37.5 43 L21 40 L37.5 37 Z" fill="white" opacity="0.3"/>
+            <defs>
+              <linearGradient id="aGrad" x1="0" y1="0" x2="80" y2="80">
+                <stop offset="0%" stop-color="#FFD3F0"/>
+                <stop offset="100%" stop-color="#B7E7FC"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <p class="section-label">— Nuestra historia</p>
+          <h2 class="section-title">Diseño con alma.</h2>
+          <p class="about-text">SÉCTION 710 nació de la convicción de que cada accesorio debe contar una historia. Combinamos materiales premium con diseño independiente para crear piezas que trascienden tendencias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-xl d-flex justify-content-between align-items-center flex-wrap gap-3">
+      <div class="d-flex align-items-center gap-2">
+        <svg width="24" height="24" viewBox="0 0 36 36" fill="none">
+          <path d="M18 2 L20.5 15.5 L34 18 L20.5 20.5 L18 34 L15.5 20.5 L2 18 L15.5 15.5 Z" fill="url(#fGrad)" />
+          <defs><linearGradient id="fGrad" x1="2" y1="2" x2="34" y2="34"><stop offset="0%" stop-color="#FFD3F0"/><stop offset="100%" stop-color="#B7E7FC"/></linearGradient></defs>
+        </svg>
+        <span class="brand-name" style="font-size:0.9rem">SÉCTION <em>710</em></span>
+      </div>
+      <p class="footer-copy">© 2025 Séction 710. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" style="max-width:90vw; width:90vw;">
+      <div class="modal-content">
+        <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="modal-body p-0">
+          <div class="row g-0 h-100">
+            <!-- Image panel -->
+            <div class="col-lg-6 modal-img-panel">
+              <div class="modal-img-wrapper">
+                <img id="modalMainImg" src="" alt="" class="modal-product-img" />
+                <div class="modal-img-thumbs" id="modalThumbs"></div>
+              </div>
+            </div>
+            <!-- Info panel -->
+            <div class="col-lg-6 modal-info-panel">
+              <div class="modal-info-inner">
+                <span class="modal-category" id="modalCategory"></span>
+                <h2 class="modal-product-name" id="modalName"></h2>
+                <p class="modal-desc" id="modalDesc"></p>
+
+                <div class="modal-price-row">
+                  <span class="modal-price-usd" id="modalPriceUSD"></span>
+                  <span class="modal-price-rd" id="modalPriceRD"></span>
+                </div>
+
+                <!-- Color selector -->
+                <div class="modal-option-group" id="colorGroup">
+                  <p class="modal-option-label">Color: <strong id="colorLabel"></strong></p>
+                  <div class="color-dots" id="modalColors"></div>
+                </div>
+
+                <!-- Size selector (shoes only) -->
+                <div class="modal-option-group" id="sizeGroup" style="display:none">
+                  <p class="modal-option-label">Talla:</p>
+                  <div class="size-pills" id="modalSizes"></div>
+                </div>
+
+                <button class="btn btn-buy" id="modalBuyBtn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Añadir al carrito
+                </button>
+
+                <p class="modal-added-msg" id="modalAddedMsg" style="display:none">✓ Agregado al carrito</p>
+
+                <!-- Related products -->
+                <div class="related-section">
+                  <p class="modal-option-label mb-2">También te puede gustar</p>
+                  <div class="related-grid" id="relatedProducts"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CART TOAST -->
+  <div class="cart-toast" id="cartToast">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    ¡Producto añadido!
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
